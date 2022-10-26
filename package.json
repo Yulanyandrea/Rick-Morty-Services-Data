@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "personajes":"node index.js personajes",
+    "episodios":"node index.js episodios"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yulanyandrea/Rick-Morty-Services-Data.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yulany",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Yulanyandrea/Rick-Morty-Services-Data/issues"
