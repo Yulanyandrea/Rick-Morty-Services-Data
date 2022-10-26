@@ -29,11 +29,39 @@ async function getNameId(id){
     }
 }
 
+// EPISODIOS
 
+async function getChapter(){
+    try {
+        const response=await axios.get(`${api}/episode`)
+        const chapters=response.data.results
+        const allCharacter = chapters.map( item => {
+            return item.name;
+        })
+        console.log(allCharacter);
+      
+    } catch (error) {
+        console.log(error)
+        
+    }
+}
+
+//EPISODIOS POR ID
+async function getchapterId(id){
+    try {
+        const response=await axios.get(`${api}/episode/${id}`)
+        const Episode=response.data.characters;
+        console.log(Episode)
+        
+    } catch (error) {
+        console.log(error)
+        
+    }
+}
 
 module.exports={
     getName,
     getNameId,
-    // getChapter,
-    // getchapterId
+    getChapter,
+    getchapterId
 }

@@ -6,8 +6,8 @@ if (object === "personajes" && id) {
   getNameId(id);
 } else if (object === "personajes") {
   getName();
-// }else if(object==="episodios" && id){
-//     getchapterId(id);
-// }else if(object==="episodios"){
-//     getChapter();
-// }
+}else if(object==="episodios" && id){
+    getchapterId(id);
+}else if(object==="episodios"){
+    getChapter();
+}
