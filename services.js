@@ -50,8 +50,19 @@ async function getChapter(){
 async function getchapterId(id){
     try {
         const response=await axios.get(`${api}/episode/${id}`)
-        const Episode=response.data.characters;
-        console.log(Episode)
+
+        console.log(response.data.name)
+
+        // const allCharacter = response.map( item => {
+        //     return item.name;
+        // })
+        // console.log(allCharacter);
+
+
+
+
+        //  const Episode=response.data.characters;
+        //  console.log(Episode)
         
     } catch (error) {
         console.log(error)
